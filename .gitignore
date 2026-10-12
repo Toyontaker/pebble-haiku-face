@@ -1,0 +1,15 @@
+# ビルド成果物・依存
+build/
+node_modules/
+.lock-waf*
+*.pyc
+__pycache__/
+
+# テストで詠ませた句・プロンプトの出力
+test/out/
+
+# Windows からコピーしたときの付随ファイル
+*:Zone.Identifier
+
+# 歳時記サイトの季語一覧（再配布しない）
+data/kigosai_all.*

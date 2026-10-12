@@ -1,0 +1,106 @@
+{
+  "name": "haiku-face",
+  "author": "toyon",
+  "version": "1.5.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "pebble": {
+    "displayName": "Haiku",
+    "uuid": "e6efd052-569b-4746-b050-beb45f9d5335",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery",
+      "flint",
+      "gabbro"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "capabilities": [
+      "configurable",
+      "location",
+      "health"
+    ],
+    "messageKeys": [
+      "HAIKU_L1",
+      "HAIKU_L2",
+      "HAIKU_L3",
+      "HAIKU_DATE",
+      "LANG",
+      "STATUS",
+      "REQUEST_HAIKU",
+      "DAY_THEME",
+      "NIGHT_START",
+      "NIGHT_END",
+      "NIGHT_MODE",
+      "SUN_RISE",
+      "SUN_SET",
+      "TIME_FONT",
+      "STEPS",
+      "SCHED_MODE",
+      "SCHED_T1",
+      "SCHED_T2",
+      "SCHED_T3",
+      "NIGHT_THEME",
+      "SIDE_INFO",
+      "WEATHER_KANJI",
+      "TEMP",
+      "REQUEST_WEATHER"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "IMAGE_MENU_ICON",
+          "file": "images/menu_icon.png",
+          "menuIcon": true
+        },
+        {
+          "type": "font",
+          "name": "BRUSH_KAISHO_26",
+          "file": "fonts/brush-kaisho.ttf",
+          "characterRegex": "[0-9:]"
+        },
+        {
+          "type": "font",
+          "name": "BRUSH_KAISHO_34",
+          "file": "fonts/brush-kaisho.ttf",
+          "characterRegex": "[0-9:]"
+        },
+        {
+          "type": "font",
+          "name": "BRUSH_GYOSHO_26",
+          "file": "fonts/brush-gyosho.ttf",
+          "characterRegex": "[0-9:]"
+        },
+        {
+          "type": "font",
+          "name": "BRUSH_GYOSHO_34",
+          "file": "fonts/brush-gyosho.ttf",
+          "characterRegex": "[0-9:]"
+        },
+        {
+          "type": "font",
+          "name": "BRUSH_BOLD_26",
+          "file": "fonts/brush-bold.ttf",
+          "characterRegex": "[0-9:]"
+        },
+        {
+          "type": "font",
+          "name": "BRUSH_BOLD_34",
+          "file": "fonts/brush-bold.ttf",
+          "characterRegex": "[0-9:]"
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "@rebble/clay": "^1.1.0"
+  }
+}
