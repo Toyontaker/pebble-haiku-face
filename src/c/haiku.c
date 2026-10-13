@@ -723,7 +723,7 @@ static void draw_side_info(GContext *ctx, int cx, int cy, int r, int bottom) {
   graphics_context_set_fill_color(ctx, COLOR_HANKO);
   graphics_fill_circle(ctx, GPoint(cx, cy), r);
   graphics_context_set_text_color(ctx, GColorWhite);
-  graphics_draw_text(ctx, seal, s_font_g18, GRect(cx - r, cy - r - 2, r * 2, r * 2 + 4),
+  graphics_draw_text(ctx, seal, s_font_g18, GRect(cx - r, cy - r + 1, r * 2, r * 2 + 4),
                      GTextOverflowModeFill, GTextAlignmentCenter, NULL);
 
   // 長い文（零下十八度など）は小さい字で詰める
